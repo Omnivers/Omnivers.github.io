@@ -1,3 +1,7 @@
+@font-face {
+  font-family:An;
+  src: url(Cursif.ttf);
+}
 .menu-btn {
     position: absolute;
     z-index: 3;
@@ -83,7 +87,6 @@
           transform: scale(1.25);
           font-weight: bold;
   }
-  
   .nav-item:nth-child(1) {
     transition-delay: 0.1s; }
   
@@ -100,19 +103,20 @@
     box-sizing: border-box; }
   
   body {
-    background: #444;
     color: #fff;
     height: 100%;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.5; }
-    body{
-      /*background: url(../img/background.jpg);
-      background: rgba(68, 68, 68, 0.9), url(../img/background.jpg);
-      background-attachment: fixed;
-      background-size: cover;  */
-      background: rgba(68, 68, 68, 0.9);
+    line-height: 1.5;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(112,112,112,1) 100%); 
     }
+  #canvas1 {
+    position: absolute;
+    top: 0;left: 0;
+    width: 100%;
+    height: 100%;
+    }
+  
   h1,
   h2,
   h3 {
@@ -122,9 +126,9 @@
     h2.lg-heading,
     h3.lg-heading {
       font-size: 6rem; }
-    h1.sm-heading,
-    h2.sm-heading,
-    h3.sm-heading {
+    h1#sm-heading,
+    h2#sm-heading,
+    h3#sm-heading {
       margin-bottom: 2rem;
       padding: 0.2rem 1rem;
       background: rgba(73, 73, 73, 0.5); }
@@ -149,10 +153,21 @@
     main .icons {
       margin-top: 1rem; }
       main .icons a {
-        padding: 0.4rem; }
-        main .icons a:hover {
-          color: #eece1a;
-          transition: all 0.5s ease-out; }
+        cursor: pointer;
+        padding: 0.4rem; 
+      }
+      #Fb{
+        color: rgba(126, 126, 147, 0.998);
+        transition: all 0.5s ease-out;
+      }
+      #linkedin{
+        color: aqua;
+        transition: all 0.5s ease-out;
+      }
+      #github{
+        color: rgb(72, 0, 48);
+        transition: all 0.5s ease-out;
+      }
     main#home {
       overflow: hidden; }
       main#home h1 {
@@ -170,7 +185,7 @@
       height:40vh;
       margin: auto;
       border-radius: 10%;
-      border: #a81191 3px solid; }
+      border: aqua 3px solid; }
     .about-info .bio {
       grid-area: bio;
       font-size: 1.5rem;
@@ -187,22 +202,28 @@
       background: #2b2b2b;
       border-radius: 10px;
       padding: 1rem;
-      border-bottom: #eece1a 5px solid; }
+      border-bottom: #a81191 5px solid; }
       .about-info .job h3{
         color:  #a81191;
+        font-weight: bolder;
         font-size: 20px;
-        text-shadow: #a81191 2px 0px 2px;
+        text-shadow: aqua 0px 0px 1px;
       }
     #about .text-secondary {
       color: #a81191
       } 
     #about_me{
     background-color: #2b2b2b;
+    box-shadow: aqua 3px 0px 0px;
     padding:30px;
     border-radius: 10px;
     }
     #about_me a{
     color: aqua;
+    }
+    .job li{
+      font-size: 20px;
+      text-shadow: #a81191 1px 2px 1px;
     }
   .projects {
     display: grid;
@@ -216,23 +237,6 @@
         border-color: #eece1a;
         transition: all 0.5s ease-out; }
   
-  .boxes {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 1rem; }
-    .boxes div {
-      padding: 10px;
-      font-size: 2rem;
-      border: 3px #fff solid;
-      transition:0s; }
-      .boxes div:hover {
-        padding:20px ;
-        background: #eece1a;
-        color: #000; }
-        .boxes div:hover span {
-          color: #000; }
   
   .btn, .btn-dark, .btn-light {
     display: block;
@@ -254,9 +258,76 @@
   #main-footer {
     text-align: center;
     padding: 1rem;
-    background: #2b2b2b;
+    background: #000000;
     color: #fff;
     height: 60px; }
+  #work .text-secondary {
+      color: #a30000ae;
+      } 
+  #contact{
+      min-height: 0;
+    } 
+  #contact .text-secondary{
+    color: green;
+  }
+  #content {
+    font-family: An;
+    font-size: 20px;
+    margin-top:0;
+    margin-left: 250px;
+    margin-bottom: 50px;
+    padding: 20px;
+    width: 100vh;
+    background: rgba(73, 73, 73, 0.5);
+    border-radius: 10px;
+  }
+  #close{
+    display: none;
+    margin: 20px;
+    padding: 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  #close:hover{
+    padding-left:30px;
+    padding-right: 30px;
+    box-shadow:#fc4141 2px 2px 2px;
+  }
+  #contactme{
+    margin: 20px;
+    padding: 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  #contactme:hover{
+  padding: 30px;
+  box-shadow:#29ff0d 2px 2px 2px;
+  }
+  #icons{
+    display: none;
+  }
+  #icons a{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: rgba(73, 73, 73, 0.5);
+    margin: 10px;
+    border-radius: 10px;
+  }
+  #icons #linkedin{
+    font-size: 12px;
+  }
+  #icons #github{
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+  }
+
   
   @media screen and (min-width: 1171px) {
     .projects {
@@ -264,7 +335,8 @@
   
   @media screen and (min-width: 769px) and (max-width: 1170px) {
     .projects {
-      grid-template-columns: repeat(3, 1fr); } }
+      grid-template-columns: repeat(3, 1fr); }
+     }
   
   @media screen and (max-width: 768px) {
     main {
@@ -296,7 +368,11 @@
       grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
       grid-template-columns: 1fr; }
     .projects {
-      grid-template-columns: repeat(2, 1fr); } }
+      grid-template-columns: repeat(2, 1fr); } 
+    #content {
+        margin-left:0px;
+        width: auto;
+      }}
   
   @media screen and (max-width: 500px) {
     main {
@@ -308,3 +384,8 @@
         font-size: 5rem; }
     .projects {
       grid-template-columns: 1fr; } }
+
+
+
+
+      
