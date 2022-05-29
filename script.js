@@ -1,20 +1,15 @@
 // typewritter :
 const txtAnim=document.getElementById('sm-heading');
-var txt = 'Web Developer, Programmer & Designer.';
+var txt = 'Web Developer, Programmer';
 var i=0;
 var speed = 100;
 
 function typeWriter() {
-    if (i < 27) {
+    if (i < txt.length) {
         txtAnim.innerHTML += txt.charAt(i);
         i++;
-        setTimeout(typeWriter, 100);
+        setTimeout(typeWriter, 200);
       }
-    else if (i<txt.length) {
-        txtAnim.innerHTML += txt.charAt(i);
-        i++;
-        setTimeout(typeWriter, 300);
-    }
     else{
         i=0;
         txtAnim.innerHTML="";
