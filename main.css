@@ -271,14 +271,15 @@
     color: green;
   }
   #content {
+    line-height: 2.5;
     font-family: An;
-    font-size: 20px;
+    font-size: 15px;
     margin-top:0;
     margin-left: 250px;
     margin-bottom: 50px;
     padding: 20px;
     width: 100vh;
-    background: rgba(73, 73, 73, 0.5);
+    background: rgba(73, 73, 73, 0.1);
     border-radius: 10px;
   }
   #close{
@@ -319,15 +320,23 @@
     background-color: rgba(73, 73, 73, 0.5);
     margin: 10px;
     border-radius: 10px;
+    overflow: hidden;
   }
+  #icons a:hover{
+    background-color: green;
+    color: white;
+  }
+
   #icons #linkedin{
-    font-size: 12px;
+    font-size: 10px;
   }
   #icons #github{
     color: rgb(0, 0, 0);
-    font-size: 12px;
+    font-size: 10px;
+    }
+  #icons #github:hover{
+    color: white;
   }
-
   
   @media screen and (min-width: 1171px) {
     .projects {
@@ -339,6 +348,9 @@
      }
   
   @media screen and (max-width: 768px) {
+    #content b{
+      line-height: 3.5;
+    }
     main {
       align-items: center;
       text-align: center; }
