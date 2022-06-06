@@ -108,7 +108,10 @@
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.5;
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(112,112,112,1) 100%); 
+   /*background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(112,112,112,1) 100%);*/
+    background-image: url('vecteezy_abstract-background-fluiding-particle-with-greenish-color_6655848_923.jpg');
+    background-size: cover;
+
     }
   #canvas1 {
     position: absolute;
@@ -259,8 +262,7 @@
     text-align: center;
     padding: 1rem;
     background: #000000;
-    color: #fff;
-    height: 60px; }
+    color: #fff; }
   #work .text-secondary {
       color: #a30000ae;
       } 
