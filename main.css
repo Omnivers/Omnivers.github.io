@@ -262,7 +262,8 @@
     text-align: center;
     padding: 1rem;
     background: #000000;
-    color: #fff; }
+    color: #fff; 
+  }
   #work .text-secondary {
       color: #a30000ae;
       } 
@@ -280,6 +281,7 @@
     margin-left: 250px;
     margin-bottom: 50px;
     padding: 20px;
+    padding-bottom: 130px;
     width: 100vh;
     background: rgba(73, 73, 73, 0.1);
     border-radius: 10px;
