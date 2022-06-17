@@ -26,8 +26,13 @@
       .menu-btn.close .btn-line:nth-child(2) {
         opacity: 0; }
       .menu-btn.close .btn-line:nth-child(3) {
-        transform: rotate(-45deg) translate(7px, -6px); }
-  
+        transform: rotate(-45deg) translate(7px, -6px); 
+      }
+      .menu-btn .btn-line:hover{
+      background-color: #eece1a;
+      }
+
+
   .menu {
     position: fixed;
     top: 0;
@@ -176,6 +181,10 @@
         color: rgb(72, 0, 48);
         transition: all 0.5s ease-out;
       }
+    main .icons :hover{
+      color: white;
+      padding: 10px;
+    }
     main#home {
       overflow: hidden; }
       main#home h1 {

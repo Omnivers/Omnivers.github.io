@@ -31,7 +31,7 @@ const colours=[
     'rgba(255,222,0,0.6)',
     'rgba(211,211,211,0.8)'
 ];
-const maxSize = 30;
+const maxSize = 20;
 const minSize = 0;
 const mouseRadius = 20;
 
