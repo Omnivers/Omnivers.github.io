@@ -1,6 +1,10 @@
 @font-face {
   font-family:An;
-  src: url(Cursif.ttf);
+  src: url(./Polices/Cursif.ttf);
+}
+@font-face {
+  font-family:Ro_Cond;
+  src: url(./Polices/Roboto-Condensed.ttf);
 }
 .menu-btn {
     position: absolute;
@@ -202,21 +206,22 @@
       grid-area: job2;
     }
     .about-info .job {
+      font-family: Ro_Cond;
       margin:50px;
       background: #2b2b2b;
       border-radius: 10px;
       padding: 1rem;
       border-bottom: #a81191 5px solid; }
       .about-info .job h3{
-        color:  #a81191;
+        color:  aqua;
         font-weight: bolder;
         font-size: 20px;
-        text-shadow: aqua 0px 0px 1px;
       }
     #about .text-secondary {
       color: #a81191
       } 
     #about_me{
+    font-family: Ro_Cond;
     background-color: #2b2b2b;
     box-shadow: aqua 3px 0px 0px;
     padding:30px;
@@ -227,7 +232,6 @@
     }
     .job li{
       font-size: 20px;
-      text-shadow: #a81191 1px 2px 1px;
     }
   .projects {
     display: grid;
