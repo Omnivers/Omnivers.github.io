@@ -119,9 +119,6 @@
     /*background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(112,112,112,1) 100%);
    /* background-image: url('./Img/vecteezy_abstract-background-fluiding-particle-with-greenish-color_6655848_923.jpg');*/
    background: radial-gradient(#000000,#252223);
-   -webkit-overflow-Y: hidden;
-   -moz-overflow-Y: hidden;
-   -o-overflow-Y: hidden;
    overflow-y: hidden;
    -webkit-animation: fadeIn 1 1s ease-out;
    -moz-animation: fadeIn 1 1s ease-out;
